@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Jérôme's Portfolio</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a class="link"
+          >JDD.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#education">Education</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#certifications">Certifications</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Jérôme Dupraz-Dange.</span></h1>
+        <h2 class="about__role">A Front-end Developer.</h2>
+        <p class="about__desc">
+          Hello! On this web page you can find everything you need to know about me and my carreer. <br />
+          Don't hesitate to contact me by email or via LinkedIn!
+        </p>
+
+        <div class="about__contact center">
+          <a href="#" onclick="window.open('./assets/pdf/cv-english.pdf', '_blank'); return false;">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jerome-dupraz-dange/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <h2 class="section__title">Education</h2>
+
+        <div class="educations__grid">
+          <div class="education">
+              <div class="date">
+                <h5>2015 - 2018</h5>
+              </div>
+              <div class="education_content">
+                <img src="./assets/images/ecam-strasbourg-europe.png">
+                <div>
+                  <h3>General engineering degree</h3>
+                  <h4>ECAM Strasbourg-Europe</h4>
+                  <p class="education_description">
+                    I studied mathematics, physics, mechanics, electronics, materials, computer science, etc...
+                  </p>
+                <div>
+              </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Some Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Project 1</h3>
+            <p class="project__description">
+              An app for purchasing postcards, coasters and card games directly customizable 
+              on the application. It is a PWA application in Angular with Firebase allowing the sale of printing products.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Angular</li>
+              <li class="project__stack-item">PWA</li>
+              <li class="project__stack-item">Firebase</li>
+              <li class="project__stack-item">GCP Cloud Functions</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Project 2</h3>
+            <p class="project__description">
+              An app for managing temporary and permanent electricity contracts. 
+              I had to develop a frontend in Angular by replacement of a frontend in GWT.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Angular</li>
+              <li class="project__stack-item">Jenkins</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Project 3</h3>
+            <p class="project__description">
+              An app for creation and management of custom/dynamic forms for entering results studies 
+              in the medical field.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Angular</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Project 4</h3>
+            <p class="project__description">
+              Management and processing of customer contracts and their availability through a website.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Angular</li>
+              <li class="project__stack-item">Docker</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Project 5</h3>
+            <p class="project__description">
+              A vehicle fleet management app. It was necessary to do some reverse engineering to create an Angular frontend 
+              from a Flash website. Development of a dashboard composed of various customizable widgets.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Angular</li>
+              <li class="project__stack-item">Docker</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Project 6</h3>
+            <p class="project__description">
+              A 3D visualization app for structures (buildings, beams, etc.) and load calculations.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">BabylonJS</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Main skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
+            <p>HTML</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
+            <p>CSS</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+            <p>JavaScript</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+            <p>TypeScript</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg" />
+            <p>Angular</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+            <p>Firebase</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="./assets/images/cypress.svg" />
+            <p>Cypress</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            <p>Git</p>
+          </li>
+        </ul>
+
+        <br />
+        <br />
+        <br />
+
+        <h2 class="section__title">Other skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />
+            <p>Vue</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <p>React</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" />
+            <p>Node</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+          <p>SCSS</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
+            <p>MaterialUI</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" />
+            <p>Bootstrap</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" />
+            <p>Docker</p>
+          </li>
+          <li class="skills__list-item btn btn--plain">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+            <p>MongoDB</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section certifications">
+        <h2 class="section__title">Certifications</h2>
+
+        <div class="certifications__grid">
+          <div class="certification">
+            <img src="./assets/images/angular-level-2.png" >
+            <h5>Angular Level 2</h5>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:jerome.dupraz.dange@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/rajshekhar26/cleanfolio-minimal"
+        class="link footer__link"
+      >
+        Created By Jérôme Dupraz-Dange
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
