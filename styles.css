@@ -30,6 +30,12 @@ img {
   height: 50px;
 }
 
+@media only screen and (max-width: 600px) {
+  img {
+    display: none;
+  }
+}
+
 .light {
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
