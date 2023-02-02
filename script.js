@@ -29,11 +29,14 @@ const setTheme = (bodyClass, btnClass) => {
 const toggleTheme = () => {
 	const logoEducation = document.querySelector('.education_content > img');
 	isDark() ? setTheme('light', 'fa-moon') : setTheme('dark', 'fa-sun')
-	isDark() ? logoEducation.setAttribute('width', 0) : logoEducation.removeAttribute('width')
+	isDark() ? logoEducation.setAttribute('width', 0) : logoEducation.removeAttribute('width');
 }
 	
 
 btnTheme.addEventListener('click', toggleTheme)
+
+const logoEducation = document.querySelector('.education_content > img');
+isDark() ? logoEducation.setAttribute('width', 0) : logoEducation.removeAttribute('width');
 
 const displayList = () => {
 	const navUl = document.querySelector('.nav__list')
