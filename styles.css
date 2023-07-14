@@ -329,6 +329,9 @@ main {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 2em;
   margin: 0 auto;
   text-align: center;
@@ -342,7 +345,7 @@ main {
 
 .project__description {
   margin-top: 2em;
-  height:  150px;
+  height: 150px;
 }
 
 .project__stack {
