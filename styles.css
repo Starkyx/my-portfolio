@@ -437,6 +437,10 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
+.text__important {
+  color: var(--clr-primary);
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
