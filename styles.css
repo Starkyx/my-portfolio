@@ -31,7 +31,7 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
-  img {
+  .education_content img {
     display: none;
   }
 }
@@ -281,6 +281,8 @@ main {
 .about__desc,
 .about__contact {
   margin-top: 2.4em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about .link--icon {
