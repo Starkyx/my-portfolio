@@ -413,6 +413,30 @@ main {
   transform: translateY(-7px);
 }
 
+.hobbies__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
+}
+
+.hobby {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+}
+
+.hobby > img {
+  height: 200px;
+}
+
+.hobby:hover {
+  transform: translateY(-7px);
+}
+
 .contact {
   flex-direction: column;
 }
